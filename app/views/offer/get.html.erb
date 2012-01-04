@@ -1,0 +1,12 @@
+<span id="link_get_form">Show the request form</span>
+
+<div id="get_form">
+  <%= render 'form' %>
+</div>
+<br /><br />
+
+<% if @offers.error? %>
+  <%= render 'error' %>
+<% else %>
+  <%= render @offers.empty? ? 'no_offers' : 'offers' %>
+<% end %>

@@ -1,0 +1,11 @@
+<h2>Params for request:</h2>
+
+<div id="params_form">
+  <%= form_tag '/offer/get' do %>
+    <%= label_tag :uid, "UID: " %> <%= text_field_tag :uid, params[:uid] %> <br />
+    <%= label_tag :pub0, "Pub0: " %> <%= text_field_tag :pub0, params[:pub0] %> <br />
+    <%= label_tag :page, "Page: " %> <%= text_field_tag :page, params[:page] %> <br />
+    <br />
+    <%= submit_tag 'Send Request' %>
+  <% end %>
+</div>
